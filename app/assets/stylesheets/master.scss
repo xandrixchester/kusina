@@ -4,8 +4,8 @@
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #28D319;
+  box-shadow: 1px 1px 3px 0 #28D319;
   background: #fff;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
@@ -30,5 +30,12 @@ body {
 
 .navbar {
 	background: image_url('darth.png');
-	box-shadow: 0px 1px 3px #2a2a2a;
+	box-shadow: 0px 1px 3px #28D319;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #28D319;
+  font-family: 'rubikmedium_italic';
+  font-size: 26px;
 }
