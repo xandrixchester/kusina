@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-  	before_action :authenticate_user!, only: [:new, :create, :edit, :update]
+  	before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
 	def index
 		@places = Place.all
@@ -26,6 +26,7 @@ class PlacesController < ApplicationController
  	def show
  		@place = Place.find(params[:id])
  		@comment = Comment.new
+ 		@photo = Photo.new
  	end
 
 
@@ -67,7 +68,7 @@ class PlacesController < ApplicationController
   private
 
   	def place_params
-    	params.require(:place).permit(:name, :description, :address)
+    	params.require(:place).permit(:name, :description, :address, :picture)
   	end
 
 end
