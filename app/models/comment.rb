@@ -2,6 +2,8 @@ class Comment < ApplicationRecord
 
 	belongs_to :user
 	belongs_to :place
+  after_create :send_comment_email
+
 
 
 
@@ -17,5 +19,8 @@ class Comment < ApplicationRecord
     RATINGS.invert[self.rating]
   	end
 
+  def send_comment_email
+      NotificationMailer.comment_added(self).deliver_now
+  end
 
 end
