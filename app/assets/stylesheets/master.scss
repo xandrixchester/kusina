@@ -58,7 +58,13 @@ body {
 }
 
 #map {
-  height: 300%;
+  height: 500px;
+  margin: 0px 140px 0px 140px;
+  padding: 20px;
+  box-shadow: 1px 1px 3px 0 #1CDAE7;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
 }
 
 
@@ -113,5 +119,14 @@ blockquote p {
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+.grid {
+  display:grid;
+  grid-template-columns: 100;
+}
+
+
+
+
 
 
